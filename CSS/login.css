@@ -1,0 +1,82 @@
+:root {
+    --color-text: #000000;
+    --color-primary: #11D442;
+    --color-primary-hover: #19B340;
+    --color-link: #22C55E;
+    --color-link-hover: #0DB738;
+    --color-border: #E2E8F0;
+    --color-logo-bg: #E5E7EB;
+
+    --font-main: "Public Sans", sans-serif;
+    --font-brand: "Plus Jakarta Sans", sans-serif;
+
+    --card-max-width: 720px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--color-text);
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("../assets/login-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    transition: border-color 0.2s;
+}
+
+.input-wrapper:hover, .input-wrapper:focus-within {
+    border-color: var(--color-primary);
+}
+
+.input-wrapper svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #64748B;
+}
+
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-text);
+}

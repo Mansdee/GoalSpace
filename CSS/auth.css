@@ -1,26 +1,4 @@
-:root {
-    --color-text: #000000;
-    --color-primary: #11D442;
-    --color-primary-hover: #19B340;
-    --color-link: #22C55E;
-    --color-link-hover: #0DB738;
-    --color-border: #E2E8F0;
-    --color-logo-bg: #E5E7EB;
-
-    --font-main: "Public Sans", sans-serif;
-    --font-brand: "Plus Jakarta Sans", sans-serif;
-
-    --card-max-width: 720px;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
-
 body {
-    font-family: var(--font-main);
-    color: var(--color-text);
     min-height: 100vh;
     display: flex;
     flex-direction: column;

@@ -10,6 +10,9 @@
     --font-main: "Public Sans", sans-serif;
     --font-brand: "Plus Jakarta Sans", sans-serif;
 
+    --color-accent: #FF8C00;
+    --color-accent-hover: #D47909;
+    
     --card-max-width: 720px;
     --container-width: 1280px;
 }

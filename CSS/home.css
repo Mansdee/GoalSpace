@@ -77,3 +77,235 @@
 .btn-pill--primary:hover {
     background: var(--color-primary-hover);
 }
+
+.hero {
+    --hero-inset: 192px;
+    padding: 28px 0 64px;
+}
+
+.hero-card {
+    display: flex;
+    align-items: center;
+    min-height: 520px;
+    padding: 48px 24px 48px var(--hero-inset);
+    border-radius: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 640px;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid rgba(17, 212, 66, 0.4);
+    border-radius: 999px;
+    background: rgba(17,212,66, 0.15);
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    margin-top: 16px;
+    font-family: var(--font-brand);
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #FFFFFF;
+}
+
+.text-green {
+    display: block;
+    color: var(--color-primary);
+}
+
+.hero-content p {
+    max-width: 480px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.btn-hero {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 52px;
+    padding: 0 28px;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-hero svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s;
+}
+
+.btn-hero--accent {
+    background: var(--color-accent);
+    color: #FFFFFF;
+}
+
+.btn-hero--accent:hover,
+.btn-hero--accent:active {
+    background: var(--color-accent-hover);
+}
+
+.btn-hero--accent:hover svg {
+    transform: translate(4px);
+}
+
+.btn-hero--glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
+    backdrop-filter: blur(4px);
+}
+
+.btn-hero--glass:hover,
+.btn-hero--glass:active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 840px;
+    margin: -37px 24px 0 var(--hero-inset);
+    padding: 8px 8px 8px 12px;
+    background: #FFFFFF;
+    border-radius: 999px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.search-field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+}
+
+.search-field + .search-field {
+    border-left: 1px solid var(--color-border);
+}
+
+.search-field svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--color-link);
+}
+
+.search-field label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #94A3B8;
+}
+
+.search-field input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.search-field input::placeholder {
+    color: #64748B;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(17, 212, 66, 0.3);
+    transition: background 0.2s;
+}
+
+.search-button:hover,
+.search-button:active {
+    background: var(--color-primary-hover);
+}
+
+.search-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width:1024px) {
+    .hero {
+        --hero-inset:64px;
+    }
+
+    .hero-card {
+        min-height: 480px;
+        padding: 72px;
+        border-radius: 28px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+        margin: -48px 16px 0 16px;
+        padding: 8px;
+        border-radius: 24px;
+    }
+
+    .search-field {
+        padding: 12px 16px;
+    }
+
+    .search-field + .search-field {
+        border-left: none;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .search-button {
+        width: 100%;
+        height: 52px;
+        margin-top: 8px;
+        border-radius: 999px;
+    }
+}

@@ -15,3 +15,12 @@ toggleButtons.forEach(function (button) {
         }
     })
 });
+
+const authForm = document.querySelector("form[data-redirect");
+
+if (authForm) {
+    authForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        window.location.href = authForm.dataset.redirect;
+    });
+}

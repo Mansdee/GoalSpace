@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalSpace - Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="home.html" class="header-logo">
+                <img src="assets/logo-header.png" alt="GoalSpace">
+            </a>
+
+            <button type="button" class="menu-toggle" aria-label="Open Menu" aria-expanded="false" aria-controls="header-menu">
+                <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 5h16"/>
+                    <path d="M4 12h16"/>
+                    <path d="M4 19h16"/>
+                </svg>
+                <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 6 6 18"/>
+                    <path d="m6 6 12 12"/>
+                </svg>
+            </button>
+
+            <div class="header-menu" id="header-menu">
+                <nav class="main-nav">
+                    <a href="home.html" class="active">Home</a>
+                    <a href="#">Venues</a>
+                    <a href="#">My Bookings</a>
+                    <a href="#">Leagues</a>
+                    <a href="#">About Us</a>
+                </nav>
+
+                <div class="header-user">
+                    <button type="button" class="icon-button" aria-label="Notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.268 21a2 2 0 0 0 3.464 0"/>
+                            <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="user-menu" aria-label="Account Menu">
+                        <img src="assets/avatar.png" alt="avatar" class="avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+
+                <div class="hero-card">
+                    <div class="hero-content">
+                        <span class="hero-badge">#1 Futsal Community</span>
+                        <h1>Find & Book Your <span class="text-green">Futsal Space</span></h1>
+                        <p>Join thousands of players booking the best courts in the city. Instant confirmation, secure payments.</p>
+
+                        <div class="hero-actions">
+                            <a href="#" class="btn-hero btn-hero--accent">
+                                Book Now
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn-hero btn-hero--glass">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/>
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                                Watch Video
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="search-bar" role="search">
+                        <div class="search-field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <label for="where">Where</label>
+                                <input type="text" id="where" placeholder="City or Venue...">
+                            </div>
+                        </div>
+
+                        <div class="search-field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8 2v3"/>
+                                <path d="M16 2v3"/>
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M3 9h18"/>
+                            </svg>
+                            <div>
+                                <label for="date">When</label>
+                                <input type="text" id="date" placeholder="Select Date">
+                            </div>
+                        </div>
+
+                        <div class="search-field">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <div>
+                                <label for="time">Time</label>
+                                <input type="text" id="time" placeholder="Select Time">
+                            </div>
+                        </div>
+
+                        <button type="button" class="search-button" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m21 21-4.34-4.34"/>
+                                <circle cx="11" cy="11" r="8"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="venues">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Top Rated Pitches</h2>
+                        <p>Discover the highest rated fields near you based on player reviews.</p>
+                    </div>
+                    <a href="#" class="link-arrow">
+                        See All Fields
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="venue-grid">
+
+                    <article class="venue-card">
+                        <div class="venue-media">
+                            <img src="assets/venue-1.png" alt="Mini Soccer pitch">
+                            <span class="rating-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+                                </svg>
+                                4.9 <span>(200)</span>
+                            </span>
+                        </div>
+
+                        <div class="venue-info">
+                            <div class="venue-title-row">
+                                <h3>Mini Soccer</h3>
+                                <span class="venue-tag">Outdoor</span>
+                            </div>
+                            <p class="venue-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Semarang City
+                            </p>
+                        </div>
+
+                        <div class="venue-footer">
+                            <p class="venue-price">Rp200.000 - Rp300.000<span>/hr</span></p>
+                            <a href="#" class="venue-arrow" aria-label="View Mini Soccer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 7h10v10"/>
+                                    <path d="M7 17 17 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="venue-card">
+                        <div class="venue-media">
+                            <img src="assets/venue-2.png" alt="Mini Soccer pitch">
+                            <span class="rating-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+                                </svg>
+                                4.7 <span>(340)</span>
+                            </span>
+                        </div>
+
+                        <div class="venue-info">
+                            <div class="venue-title-row">
+                                <h3>Fanny Futsal Stadium</h3>
+                                <span class="venue-tag">Indoor</span>
+                            </div>
+                            <p class="venue-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Semarang City
+                            </p>
+                        </div>
+
+                        <div class="venue-footer">
+                            <p class="venue-price">Rp150.000 - Rp250.000<span>/hr</span></p>
+                            <a href="#" class="venue-arrow" aria-label="View Mini Soccer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 7h10v10"/>
+                                    <path d="M7 17 17 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="venue-card">
+                        <div class="venue-media">
+                            <img src="assets/venue-3.png" alt="Mini Soccer pitch">
+                            <span class="rating-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+                                </svg>
+                                4.9 <span>(530)</span>
+                            </span>
+                        </div>
+
+                        <div class="venue-info">
+                            <div class="venue-title-row">
+                                <h3>Golden Futsal</h3>
+                                <span class="venue-tag">Indoor</span>
+                            </div>
+                            <p class="venue-location">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                Semarang City
+                            </p>
+                        </div>
+
+                        <div class="venue-footer">
+                            <p class="venue-price">Rp150.000 - Rp280.000<span>/hr</span></p>
+                            <a href="#" class="venue-arrow" aria-label="View Mini Soccer">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 7h10v10"/>
+                                    <path d="M7 17 17 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <ul class="stats-list">
+                    <li class="stat">
+                        <span class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 10h.01"/>
+                                <path d="M12 14h.01"/>
+                                <path d="M12 6h.01"/>
+                                <path d="M16 10h.01"/>
+                                <path d="M16 14h.01"/>
+                                <path d="M16 6h.01"/>
+                                <path d="M8 10h.01"/>
+                                <path d="M8 14h.01"/>
+                                <path d="M8 6h.01"/>
+                                <path d="M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/>
+                                <rect x="4" y="2" width="16" height="20" rx="2"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <strong class="stat-value">150+</strong>
+                            <span class="stat-label">Venues</span>
+                        </div>
+                    </li>
+                    
+                    <li class="stat">
+                        <span class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                <path d="M16 3.128a4 4 0 0 1 0 7.744"/>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                <circle cx="9" cy="7" r="4"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <strong class="stat-value">50+</strong>
+                            <span class="stat-label">Players</span>
+                        </div>
+                    </li>
+
+                    <li class="stat">
+                        <span class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+                            </svg>
+                        </span>
+                        <div>
+                            <strong class="stat-value">4.9</strong>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="captains">
+            <div class="container">
+                <div class="captains-card">
+
+                    <div class="captains-content">
+                        <span class="eyebrow">For Team Captains</span>
+                        <h2>Manage Your<br>League<br>Like a Pro</h2>
+                        <p>Create leagues, track stats. and manage team payments all in one place,<br>Say goodbye to spreadsheets.</p>
+
+                        <ul class="check-list">
+                            <li>
+                                <span class="check-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>
+                                </span>
+                                Automated fixture generation
+                            </li>
+                            <li>
+                                <span class="check-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>
+                                </span>
+                                Real-time match statistics
+                            </li>
+                            <li>
+                                <span class="check-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 6 9 17l-5-5"/>
+                                    </svg>
+                                </span>
+                                Easy team fee collection
+                            </li>
+                        </ul>
+
+                        <a href="#" class="btn-pill btn-pill--primary">Start a League</a>
+                    </div>
+
+                    <div class="captains-media">
+                        <img src="assets/captains.png" alt="A futsal team posing together after match">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html">
+                        <img src="assets/logo-header.png" alt="GoalSpace">
+                    </a>
+                    <p>The easiest way to book futsal courts and manage your leagues. Play more, worry less.</p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="X">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer-col" aria-label="Explore">
+                    <h3>Explore</h3>
+                    <a href="#">Fields</a>
+                    <a href="#">Leagues</a>
+                    <a href="#">Tournaments</a>
+                </nav>
+
+                <nav class="footer-col" aria-label="Support">
+                    <h3>Support</h3>
+                    <a href="#">Help Center</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </nav>
+
+                <div class="footer-col footer-app">
+                    <h3>Get the App</h3>
+                    <a href="#" class="store-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M22.018 13.298l-3.919 2.218-3.515-3.493 3.543-3.521 3.891 2.202a1.49 1.49 0 0 1 0 2.594zM1.337.924a1.486 1.486 0 0 0-.112.568v21.017c0 .217.045.419.124.6l11.155-11.087L1.337.924zm12.207 10.065l3.258-3.238L3.45.195a1.466 1.466 0 0 0-.946-.179l11.04 10.973zm0 2.067l-11 10.933c.298.036.612-.016.906-.183l13.324-7.54-3.23-3.21z"/>
+                        </svg>
+                        <span><small>Get it on</small>Google Play</span>
+                    </a>
+                    <a href="#" class="store-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
+                        </svg>
+                        <span><small>Download on the</small>App Store</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <p class="footer-copy">&copy; 2026 GoslSpace Inc. All right reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="JS/home.js"></script>
+</body>
+</html>
